@@ -1,23 +1,21 @@
 package org.example;
-
-
 public class Product {
     int id;
-    String name;
-    Double price;
-    int quantity;
-    public Product(int id, String name, Double price, int quantity) {
+    String nome;
+    Double prezzo;
+    int quantità;
+    public Product(int id, String name, Double prezzo, int quantità) {
         this.id = id;
-        this.name = name;
-        this.price = price;
-        this.quantity = quantity;
+        this.nome = name;
+        this.prezzo = prezzo;
+        this.quantità = quantità;
     }
     public String toString() {
         return "\nProdotto{ \n" +
                 "id=" + id +'\n'+
-                "Nome=" + name + '\n' +
-                "Prezzo=" + price + '\n' +
-                "Quantità="+ quantity+ '\n' +
+                "Nome=" + nome + '\n' +
+                "Prezzo=" + prezzo + '\n' +
+                "Quantità="+ quantità + '\n' +
                 "}" ;
     }
 
@@ -29,27 +27,27 @@ public class Product {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public Double getPrice() {
-        return price;
+    public Double getPrezzo() {
+        return prezzo;
     }
 
-    public void setPrice(Double price) {
-        this.price = price;
+    public void setPrezzo(Double prezzo) {
+        this.prezzo = prezzo;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public int getQuantità() {
+        return quantità;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setQuantità(int quantità) {
+        this.quantità = quantità;
     }
 }
